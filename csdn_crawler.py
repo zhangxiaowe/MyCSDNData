@@ -21,5 +21,5 @@ month = now_time.month
 day = now_time.day
 
 output = "\n{}_{}_{}\t {}".format(year, month, day, result)
-with open("./hotlist/csdn_data.txt", mode="a") as f:
+with open("./csdndata/csdn_data.txt", mode="a") as f:
   f.write(output)
