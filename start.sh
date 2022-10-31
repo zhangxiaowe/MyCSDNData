@@ -1,3 +1,4 @@
+pip install bs4
 python3 ./csdn_crawler.py
 
 year=`date +%Y `
