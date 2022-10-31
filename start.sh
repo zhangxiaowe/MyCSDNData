@@ -1,4 +1,5 @@
 pip3 install beautifulsoup4
+pip install lxml
 python3 ./csdn_crawler.py
 
 year=`date +%Y `
