@@ -1,4 +1,4 @@
-pip install bs4
+pip3 install beautifulsoup4
 python3 ./csdn_crawler.py
 
 year=`date +%Y `
