@@ -6,6 +6,10 @@ url = 'https://blog.csdn.net/qq_34035956'
 headers = { 
     'User-Agent' : 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36(KHTHL, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
 }
+
+url_0 = 'https://blog.csdn.net/qq_34035956/article/details/127485638'
+html_file0 = requests.get(url_0, headers=headers)
+
 html_file = requests.get(url, headers=headers)
 obj_soup = bs4.BeautifulSoup(html_file.text, 'lxml')
 
