@@ -20,6 +20,15 @@ requests.get('https://blog.csdn.net/qq_34035956/article/details/118550011', head
 headers1 = {
     "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36",
 }
+requests.get('https://blog.csdn.net/qq_34035956/article/details/127485638', headers=headers1)
+requests.get('https://blog.csdn.net/qq_34035956/article/details/127622414', headers=headers1)
+requests.get('https://blog.csdn.net/qq_34035956/article/details/106072568', headers=headers1)
+requests.get('https://blog.csdn.net/qq_34035956/article/details/127623802', headers=headers1)
+requests.get('https://blog.csdn.net/qq_34035956/article/details/104053265', headers=headers1)
+requests.get('https://blog.csdn.net/qq_34035956/article/details/109255357', headers=headers1)
+requests.get('https://blog.csdn.net/qq_34035956/article/details/104036671', headers=headers1)
+requests.get('https://blog.csdn.net/qq_34035956/article/details/118550011', headers=headers1)
+
 html_file = requests.get('https://blog.csdn.net/qq_34035956?type=blog', headers=headers1)
 obj_soup = bs4.BeautifulSoup(html_file.text, 'lxml')
 result = []
@@ -28,6 +37,7 @@ for link in obj_soup.find_all('a'):  # 遍历网页中所有的超链接（a标�
 
 for link in result:
     if link.find('category_') != -1:
+        requests.get(link, headers=headers)
         requests.get(link, headers=headers1)
         
 # test end
