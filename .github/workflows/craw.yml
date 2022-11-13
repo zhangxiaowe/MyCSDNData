@@ -2,8 +2,8 @@ name: 定时抓取
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 * * * *'   #Runs every hour, on the hour
+#   schedule:
+#     - cron: '0 * * * *'   #Runs every hour, on the hour
     #- cron: '0 23 * * *'  #Runs at 23:00 UTC every day.
 
 jobs:
