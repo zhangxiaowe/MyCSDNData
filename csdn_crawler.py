@@ -3,7 +3,7 @@ import requests
 import bs4
 
 def get_data():
-    url = 'https://blog.csdn.net/qq_34035956'
+    url = 'https://blog.csdn.net/qq_41999731'
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36(KHTHL, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
     }
